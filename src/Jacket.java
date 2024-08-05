@@ -4,10 +4,8 @@ public class Jacket extends ProductForSale {
     }
 
     @Override
-    public void showDetails(ProductType type, double price, String description) {
-        System.out.println("================");
+    public void showDetails() {
         System.out.println(type + " $" + price);
         System.out.println(description);
-        System.out.println("================");
     }
 }

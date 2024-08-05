@@ -17,8 +17,7 @@ public class Store {
     public static void printOrderedItems(ArrayList<ProductForSale> list) {
         for(ProductForSale product : list) {
             System.out.println("============");
-            System.out.println(product.getType() + " $" + product.getPrice());
-            System.out.println(product.getDescription());
+            product.showDetails();
         }
     }
 

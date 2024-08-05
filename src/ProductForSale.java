@@ -1,7 +1,7 @@
 public abstract class ProductForSale {
-    private ProductType type;
-    private double price;
-    private String description;
+    protected ProductType type;
+    protected double price;
+    protected String description;
 
     public ProductType getType() {
         return type;
@@ -29,5 +29,5 @@ public abstract class ProductForSale {
         System.out.println("$" + getSalesPrice(quantity));
     }
 
-    public abstract void showDetails(ProductType type, double price, String description);
+    public abstract void showDetails();
 }

@@ -5,14 +5,12 @@ public class Tshirt extends ProductForSale {
     }
 
     @Override
-    public void showDetails(ProductType type, double price, String description) {
-        System.out.println("================");
+    public void showDetails() {
         if(price < 20) {
             System.out.println("Discount!");
         } else {
             System.out.println("Regular price!");
         }
         System.out.println(type + ": " + description + ", $" + price);
-        System.out.println("================");
     }
 }
