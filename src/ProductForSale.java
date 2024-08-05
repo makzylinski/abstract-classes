@@ -26,7 +26,7 @@ public abstract class ProductForSale {
     }
 
     public void printPricedItem(int quantity) {
-        System.out.println("");
+        System.out.println("$" + getSalesPrice(quantity));
     }
 
     public abstract void showDetails(ProductType type, double price, String description);
